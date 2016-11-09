@@ -2,7 +2,6 @@ angular.module('myPlayerApp', []).controller('mainController', ['$scope', '$elem
     var ctrl = this;
     ctrl.songs = [
         '../audio/Black Veil Brides - Legasy.mp3',
-        '../audio/Blind Guardian - Valhalla.mp3',
         '../audio/Fram - Ohne Dich.mp3',
         '../audio/IAMX - Come with knives.mp3',
         '../audio/Pain - Same old song.mp3',
