@@ -1,4 +1,11 @@
+/* FONTS */
+@font-face {
+    font-family: Fabrica;
+    src: url(../font/Fabrica.otf);
+}
+
 body {
+	font-family: Fabrica, Helvetica, Segoe UI, sans-serif;
 	background-image: url("../img/forest.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,13 +33,11 @@ audio {
 	z-index: 999;
 	background-color: rgba(37, 37, 37, 1);
 }
-.playlist.fixed-playlist {
-
-}
 .player h1 {
 	color: #fff;
 	font-size: 25px;
 	text-align: center;
+	padding-bottom: 30px;
 }
 .list-group a.list {
 	background-color: #555;

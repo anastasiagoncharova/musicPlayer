@@ -1,1 +1,1 @@
-http://anastasiagoncharova.github.io/musicPlayer/
+http://anastasiagoncharova.github.io/musicPlayer/view/
