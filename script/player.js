@@ -21,7 +21,7 @@ angular.module('myPlayerApp').component('audioPlayer', {
   template: `
   <div>
     <h1 ng-bind="$ctrl.track.title || $ctrl.player[0].title"></h1>
-		<audio ng-src="{{$ctrl.track.src || $ctrl.player[0].src | trusted}}" autoplay controls>
+		<audio ng-src="{{$ctrl.track.src || $ctrl.player[0].src | trusted}}" preload="true" autoplay controls>
 			Your browser does not support the audio element.
 		</audio>
   </div>`,
