@@ -1,0 +1,63 @@
+body {
+	background-image: url("../img/forest.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.border {
+	background-color: rgba(37, 37, 37, 0.92);
+	margin: 10% auto;
+    padding: 5%;
+    border-radius: 1%;
+    max-width: 800px;
+}
+@media screen and (max-width: 1325px) and (min-width: 400px){
+	.input-song {
+		width: 200px;
+	}
+}
+audio {
+	width: 100%;
+	margin-bottom: 5%;
+}
+.player.fixed {
+	position: fixed;
+	top: 0;
+	width: 32%;
+	z-index: 999;
+	background-color: rgba(37, 37, 37, 1);
+}
+.player h1 {
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+}
+.list-group a.list {
+	background-color: #555;
+    color: #fff;
+}
+#add-button {
+	background-color: #555;
+    border-color: #fff;
+}
+#add-button:hover {
+	background-color: #212121;
+	color: #fff;
+}
+.input-song {
+	height: 33px;
+}
+.list-group-item .glyphicon-remove {
+	cursor: pointer;
+	color: #fff;
+    float: right;
+    top: 3px;
+}
+.add-form {
+	float: right;
+}
+.list-group a.active-song,
+.list-group a.list:hover, 
+.list-group a.list:focus {
+	background-color: #212121;
+	color: #fff;
+}

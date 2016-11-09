@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Player</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="../script/main.js"></script>
+		<script src="../script/player.js"></script>
+		<script src="../script/playlist.js"></script>
+		<script src="../script/addButton.js"></script>
+		<link rel="stylesheet" type="text/css" href="../style/style.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body ng-app="myPlayerApp">
+		<div class="border" ng-controller="mainController as ctrl">
+			<audio-player class="player" player="ctrl.songs" track="ctrl.activeSong" on-end="ctrl.playNext()"></audio-player>
+			<play-list class="playlist"
+					   active-song="ctrl.activeSong"
+					   playlist="ctrl.songs"
+					   on-select="ctrl.activeSong = song"
+					   on-delete="ctrl.deleteSong(song)"
+					   on-add="ctrl.songs.push(song)">
+			</play-list>
+		</div>
+	</body>
+</html>
