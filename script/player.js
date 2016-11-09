@@ -32,8 +32,3 @@ angular.module('myPlayerApp').component('audioPlayer', {
     onEnd: '&'
   }
 });
-
-
-/*
-http://www.stephaniequinn.com/Music/Vivaldi%20-%20Spring%20from%20Four%20Seasons.mp3
-*/

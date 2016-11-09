@@ -53,9 +53,10 @@ angular.module('myPlayerApp')
 .component('addSong', {
   template: `
     <div class="add-form"><form name="addSongs" ng-submit="$ctrl.add($ctrl.url)">
-      <input type="text" name="url" class="input-song" ng-model="$ctrl.url" size="25" required/>
+      <input type="url" name="url" class="input-song" ng-model="$ctrl.url" size="25" required/>
       <button id="add-button" class="btn btn-primary" type="submit">Add Song</button>
-    </form></div>`,
+    </form>
+    </div>`,
   controller: AddSongController,
   bindings: {
     onAdd: '&'
