@@ -7,6 +7,7 @@ function PlayerController($element, $scope, $window) {
   angular.element($window).bind('scroll', function (e) {
     if ($window.scrollY >= 289) {
       $element.addClass('fixed');
+      document.getElementsByClassName('playlist').addClass('fixed-playlist');
     } else {
       $element.removeClass('fixed');
     }

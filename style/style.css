@@ -6,7 +6,7 @@ body {
 .border {
 	background-color: rgba(37, 37, 37, 0.92);
 	margin: 10% auto;
-    padding: 5%;
+    padding: 80px;
     border-radius: 1%;
     max-width: 800px;
 }
@@ -22,9 +22,12 @@ audio {
 .player.fixed {
 	position: fixed;
 	top: 0;
-	width: 32%;
+	width: 640px;
 	z-index: 999;
 	background-color: rgba(37, 37, 37, 1);
+}
+.playlist.fixed-playlist {
+
 }
 .player h1 {
 	color: #fff;
